@@ -69,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
                     actorList = response.body();
                     recyclerView.setAdapter(actorAdapter);
                     actorAdapter.getAllActors(actorList);
+                    Log.d("main", "onApiCall: "+actorList);
                 }
             }
 
